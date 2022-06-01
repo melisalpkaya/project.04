@@ -1,0 +1,845 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+
+/* header */
+.header{
+    background-color: #f7f7f7;
+    display: flex;
+	justify-content: center;
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 100%;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.header h1{
+    font-size:60px;
+    font-family:'Libre Baskerville', serif;
+    color: beige;
+    padding-top: 48px;
+    padding-left: 5px;
+}
+
+.header img{
+    width: 150px;
+    height: 150px;
+}
+#contactus-headerid
+{
+    font-size:60px;
+    font-family:'Libre Baskerville', serif;
+    color: beige;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* header nav bar */
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size:20px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    
+}
+nav ul li{
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #202020;
+    padding: 15px;
+    display: block;
+}
+nav ul li:hover{
+    background: #597f64;
+}
+nav ul ul{
+    position: absolute;
+    min-width: 200px;
+    background: #aabdae;
+    display: none;
+}
+nav ul ul li{
+    display: block;
+    background:#aabdae;
+}
+nav ul li:hover ul{
+    display: block;
+
+}
+nav ul li i{
+    color: #c58e29;
+    float: right;
+    padding-left: 15px;
+}
+nav div{
+    background: #597f64;
+    color: beige;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:700px){
+
+    header{
+        height: 60vh;
+     float: none;
+    display: block;
+    text-align: left;   
+    }
+    
+
+    nav div{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        position: static;
+        background: #597f64;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul ul{
+        position: static;
+        background: #597f64;
+    }
+
+}
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    width: 100%;
+    height: 160px;
+    background-color:#202020;
+}
+
+.copyright{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive; 
+    font-weight: 400;
+    color: #f7f7f7;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 30%;
+    display: inline-block;
+    transform: translateX(90%);
+    position: relative;
+    top: 70%;
+}
+.footer .social{
+    text-align: right;
+    position: relative;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive; 
+    font-weight: 600;
+    color: #f7f7f7;
+    margin-left: auto;
+    justify-content: space-between;
+    max-width: 30%;
+    display:block;
+    float: right;
+    padding-right: 30px;
+}
+.footer .social a{
+  
+    color: #202020;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 90%;
+    margin: 0 8px;
+    background-color: #f7f7f7;
+
+}
+
+#socialmediatitle{
+    padding-right: 80px;
+}
+
+.footer .contactus{
+    text-align: left;
+    padding-left: 30px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    color: #f7f7f7;
+    justify-content: space-between;
+    max-width: 30%;
+    display: block;
+    float: left;
+}
+
+/* homepage */
+
+.main-entry{
+    padding: 20px 0px 20px 0px;
+    background-color: #fefffa;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .image-table {
+        border: 0px solid rgba(0, 0, 0, 0);
+        border-collapse: separate;
+        border-spacing: 2px;
+        table-layout: fixed;
+        text-align: center;
+        width: 100%;
+    }
+    .image-table img {
+        border: 10px solid #fff;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0 0 5px #999;
+        box-shadow: 0 0 2px #999;
+    }
+    
+    .image-table img:hover{
+        opacity: 0.9;
+    }
+    
+    .second-entry-all{
+        background-color: #fefffa;
+    }
+    
+    .second-entry{
+        
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        align-items: center;
+        max-width:800px;
+        margin: 0 auto;
+        font: 500 100%/1.5 system-ui;
+    }
+    
+    .second-entry img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #title1{
+        font-size:1.7vw;
+        width: 300px;
+        text-align: center;
+        max-width: 100%;
+        padding-top: 9vw;
+        font-family: 'Kalam', cursive;
+    }
+    
+    #whatsnew{
+        text-align: center;
+        font-family: 'Kalam', cursive;
+       
+    }
+    .third-entry-all div{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Libre Baskerville', serif;
+        
+    }
+
+    .third-entry-all .note{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Libre Baskerville', serif;
+    }
+    
+    .fourth-entry-all{
+        background-color: #fefffa;
+    }
+    
+    .fourth-entry{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        text-align: center;
+    
+    }
+    .fourth-entry img{
+        
+        padding-left: 15px;
+        border-radius: 80%;
+        
+    
+    }
+    
+    #aboutus{
+       padding-left: 15px;
+        font-family: 'Kalam', cursive;
+        font-size: 35px;
+       
+    }
+
+    @media (max-width: 650px) {
+        .second-entry {
+          display: block;
+          font-size: 80%;
+        }
+        .second-entry p{
+          position: relative;
+          margin: -3rem 0 2rem 1rem;
+          padding: 1rem;
+          background: rgba(255, 255, 255, 0.8);
+        }
+      }
+    
+      .second-entry p{
+        font-family: 'Kalam', cursive;
+        font-style: bold;
+    
+      }
+    
+      .fourth-entry p{
+        font-family: 'Kalam', cursive;
+        font-size: 20px;
+        padding-top: 80px;
+    
+      }
+
+      #container2{
+        max-width: 640px;
+        position: relative;
+        margin: auto;
+    
+    }
+    .third-entry-all .resim{
+        width: 100%;
+        display: none;
+    }
+    
+    .third-entry-all .ileri, .geri{
+        position: absolute;
+        background: gray;
+        opacity: 0.6;
+        font-size: 20px;
+        padding: 10px;
+        color: aliceblue;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    .third-entry-all .ileri{
+        right: 0;
+    }
+    .third-entry-all .geri{
+        left: 0;
+    }
+    .third-entry-all .aktif{
+        display: block;
+        animation: fade .7s ease;
+    
+    }
+    @keyframes fade{
+        0%{opacity: .5;}
+        100%{opacity: 1;}
+    }
+  
+    .third-entry-all .aktiflist{
+        background-color: rgb(63, 61, 61);
+    }
+
+/* contact us */
+
+.map{
+    background-color: #fefffa;
+    height: 40%;
+    overflow:hidden;
+    padding-top: 10%;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+
+#googlemaps{
+ 
+    left:15%;
+    right: 10%;
+    top:50px;
+    height:70%;
+    width:70%;
+    position:absolute;
+}
+
+.form{
+
+    background-color: #f1f1f1;
+    height: 40%;
+    overflow:hidden;
+    padding-bottom:35%;
+    position:relative;
+    height:0;
+    opacity: 0.9;
+}
+
+#formtitle{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 20%;
+}
+
+#namesurname{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 20%;
+    padding-right: 2%;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 1%;
+}
+
+#email{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 20%;
+    padding-right: 7%;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 1.5%;
+}
+
+#suggestions{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 18%;
+    padding-right: 0.7%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+label{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 70px;
+    
+}
+
+#topicid{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    padding-left: 20%;
+    padding-right: 0.7%;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 1.5%;
+}
+
+#topic{
+    margin-left: 105px;
+}
+
+input{
+    display: inline-block;
+}
+
+.send{
+    margin-left: 68.5%;
+    padding: 4px 20px 4px 20px;
+    background-color:#202020;
+    color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container-contact{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #fefffa;
+}
+.container-contact .container-item{
+    flex-grow: 1;
+}
+
+.container-contact .container-item h2{
+    color: #597f64;
+   
+}
+
+.container-item .image img{
+    padding-top: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+.container-contact i{
+    font-size: 50px;
+    color: #597f64;
+}
+
+.container-contact h2{
+    font-size:25px;
+    font-family:'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    text-decoration: underline  #597f64 3px;
+
+}
+
+.container-contact p{
+    font-size:20px;
+    font-family:'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* gallery */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 5px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .column img:hover {
+      opacity: 0.8;
+      
+  }
+
+   /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* menu */
+
+#foodstitle{
+    display: flex;
+    text-decoration: underline  #f7f7f7 5px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 40px;
+    justify-content: center; 
+    padding: 30px 0px 30px 0px  ;
+    color: #f7f7f7;
+    background-color: #202020;
+    background:url("images/backgroundimages/Untitled.jpg");
+    background-size:cover ;
+    
+}
+
+#drinkstitle{
+    display: flex;
+    text-decoration: underline  #f7f7f7 5px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 40px;
+    justify-content: center; 
+    padding: 30px 0px 30px 0px  ;
+    color: #f7f7f7;
+    background-color: #202020;
+    background:url("images/backgroundimages/Untitled.jpg");
+    background-size:cover ;
+    
+}
+
+.entry{
+    background-color: #d4ded6;
+    height: 800px;
+}
+
+.wrap-grid-menu{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-self: center;
+    background-color: #fefffa;
+}
+
+.wrap-grid-menu .menup h3{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+
+.container-menu img{
+    padding: 20px;
+    width: 18rem;
+    border-radius: 2rem;
+}
+.container-menu{
+    box-shadow: 0px 2px 8px 0px #597f64 ;
+    text-align: center;
+    margin: 20px;
+    border-radius: 1rem;
+    padding: 8px 0px 8px 0px;
+    background-color: #fefffa;
+}
+
+
+.menuitems .container-menu img{
+    padding: 20px;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.menuitems h3{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+}
+.subtitle-menu{
+    display: flex;
+    text-decoration: underline  #202020 2px;
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 20px;
+    justify-content: left; 
+    margin-top: 10px;
+    color:   #202020 ;
+    padding-left: 50px;
+    background-color: #fefffa;
+}
+
+/* journey */
+
+.container-journey {
+    padding: 64px;
+  }
+
+.container-journey p{
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .row-journey:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column1 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column2 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+
+  img {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+  }
+  .column3 img {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .column1,
+    .column2,
+    .column3 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
+  
+  #campaign{
+    display: flex;
+	font-family: 'Nunito', sans-serif;
+    font-size: 95%;
+    width: 800px;
+    margin: 20px auto; 
+    background-color: #fefffa;
+    border: #202020;
+    border-style: double;
+    border-width: 5px;
+
+}
+#campaign nav a:focus, nav a:hover, article a:hover {
+	font-style: italic;
+}
+
+/* the styles for the main content */
+#campaign main {
+	clear: left;
+	padding: 0 20px 20px;
+	width: 525px;
+	float: right;
+}
+#campaign main h1 {
+	color: #597f64;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+#campaign main h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+#campaign main p {
+	padding-bottom: .5em;
+}
+#campaign main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+#campaign main ul {
+	padding: 0 0 1.5em 1.25em;
+}
+#campaign main li {
+	padding-bottom: .35em;
+}
+
+#campaign main img {
+	float: right;
+	margin: 1em 0 1em 1em;
+}
+
+#campaign aside {
+	width: 215px;
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+#campaign aside h1 {
+	color: #597f64;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+#campaign aside h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+#campaign aside img {
+	padding-bottom: 1em;
+}
+/* the styles for the navigation list */
+#campaign #nav_list ul { 
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 1.5em; }
+#campaign #nav_list li { 
+	width: 200px;
+	margin-bottom: .5em;
+	border: 2px double black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0 0 #e6b554;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+		
+}
+#campaign #nav_list li a {
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	font-size: 85%;
+    font-family: 'Nunito', sans-serif;
+}
+
+#suggestionbutton {
+    box-shadow: 0px 2px 8px 0px #597f64 ;
+    text-align: center;
+    margin: 20px;
+    border-radius: 1rem;
+    padding: 8px 0px 8px 0px;
+    background-color: #fefffa;
+}
+#suggestionbutton a:link, a:visited {
+    background-color: #597f64;
+    color: #171b18;
+    border: 2px solid white ;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px auto ;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    border-radius: 7%;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+#suggestionbutton a:hover, a:active {
+    background-color:  white;
+    color:#111211;
+  }
+
+  #suggestionbutton #suggestiondescription,#suggestiondrink{
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+      padding: 10px;
+  }

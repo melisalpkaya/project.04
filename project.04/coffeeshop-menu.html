@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+     <!--css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="navbar.js"></script>
+    
+</head>
+<body>
+
+    <!--Header: Title of website and logo-->
+    <div class="header">
+        <img id="cat" alt="" src="cat.png"/>
+        <h1 id="headerid" style="color: #202020; ">Coffee Shop Co.</h1>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+        <div><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="index.html">HOMEPAGE</a></li>
+            <li><a href="coffeeshop-menu.html">MENU <i class="fas fa-sort-down"></i></a>
+                <ul>
+                    <li><a href="coffeeshop-foods.html">Food Menu</a></li>
+                    <li><a href="coffeeshop-drinks.html">Drink Menu</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#aboutus">ABOUT US</a></li>
+            <li><a href="coffeeshop-coffeejourney.html">COFFEE</a></li>
+            <li><a href="coffeeshop-gallery.html">GALLERY</a></li>
+            <li><a href="coffeeshop-contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+   <!--Main section-->
+    <section class="menuitems">
+        <div class="wrap-grid-menu">
+            <div class="container-menu">
+               <a href="coffeeshop-drinks.html"><img src="images/menu/coffee.png" alt=""></a> 
+                <h3>Drinks</h3>
+            </div>
+            <div class="container-menu">
+               <a href="coffeeshop-foods.html"> <img src="images/menu/cookie.png" alt=""></a>
+                <h3>Foods</h3>
+           </div>
+<!--Suggestion button-->
+      
+        </div>
+    </section>
+     <div id="suggestionbutton">
+               <h1 id="suggestiondrink"></h1>
+               <p id="suggestiondescription"></p>
+               <a id="suggesta" href="#" title="suggestionbutton" >Suggest me a drink</a>
+           </div>
+
+
+<!--Footer-->
+<section class="footer">
+    <div class="social">
+        <h4 id="socialmediatitle">Social Media</h4><br>
+        <a href="https://www.instagram.com/kantacoffeeshop/"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/playlist/2s9R059mmdc8kz6lrUqZZd?si=f2f741ade4b546db"><i class="fab fa-spotify"></i></a>
+        <a href="https://twitter.com/coffeeshopworld"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/federalankara"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <p class="copyright">
+        Copyright © 2022 | coffee-shop all rights reserved.
+    </p>
+
+    <div class="contactus">
+     <h4 id="contactustitle">Contact Us</h4><br>
+       <p id="address">Yukarı Bahçelievler, 65. Sk. No:4, 06490 Çankaya/Ankara</p>
+       <i class="fa-solid fa-envelope"></i> coffeeshopcompany@gmail.com<br>
+       <i class="fa-solid fa-phone"></i> +90530 238 05 00
+
+    </div>
+</section>
+<script src="ajax.js"></script>
+
+
+    
+</body>
+</html>

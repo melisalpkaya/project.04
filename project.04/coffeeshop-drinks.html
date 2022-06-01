@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks</title>
+    <!--css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="navbar.js"></script>
+
+</head>
+<body>
+
+    <!--Header:Title of website and logo-->
+    <div class="header">
+        <img alt="" id="cat" src="cat.png"/>
+        <h1 id="headerid" style="color: #202020; ">Coffee Shop Co.</h1>
+  </div>
+
+       <!--Navigation Bar-->
+       <nav>
+           <div><i class="fas fa-bars"></i></div>
+           <ul>
+            <li><a href="index.html">HOMEPAGE</a></li>
+            <li><a href="coffeeshop-menu.html">MENU <i class="fas fa-sort-down"></i></a>
+                <ul>
+                    <li><a href="coffeeshop-foods.html">Food Menu</a></li>
+                    <li><a href="coffeeshop-drinks.html">Drink Menu</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#aboutus">ABOUT US</a></li>
+            <li><a href="coffeeshop-coffeejourney.html">COFFEE</a></li>
+            <li><a href="coffeeshop-gallery.html">GALLERY</a></li>
+            <li><a href="coffeeshop-contactus.html">CONTACT US</a></li>
+        </ul>
+       </nav>
+
+    <!--Main Section:Drink menu-->
+    <h1 id="drinkstitle">DRINKS</h1>
+    <h2 class="subtitle-menu">Hot Drinks</h2>
+    <div class="wrap-grid-menu">
+        <div class="container-menu">
+            <img src="images/hotdrinks/turk-kahvesi(1).png" alt="">
+            <h3>Turkish Coffee</h3>
+            <p>We cook our fragrant coffee, which we obtain from very roasted coffee beans, with a cezve, faithful to the traditional cooking culture, and serve it with chocolate and water.</p>
+        </div>
+        <div class="container-menu">
+            <img src="images/hotdrinks/mocha.png" alt="">
+            <h3>Mocha</h3>
+            <p>A warm coffee that comes out of the combination of espresso, milk and chocolate! You will like our soft-tasting coffee very much.</p>
+       </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/macchiato.png" alt="">
+            <h3>Macchiato</h3>
+            <p>An espresso feast served with fresh milk foam on it...</p>
+        </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/karamelli-macchiato.png" alt="">
+            <h3>Caramel Macchiato</h3>
+            <p>Milk carefully heated with steam on vanilla syrup, milk foam and a touch of espresso are served with a caramel sauce.</p>
+        </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/cappuccino.png" alt="">
+            <h3>Cappuccino</h3>
+            <p>We serve this light coffee, which comes out of the mixture of espresso with milk, with plenty of milk foam on it.</p>
+        </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/caffe-latte.png" alt="">
+            <h3>Caffè Latte</h3>
+            <p>Balanced blend of rich espresso, steamed velvety milk and milk foam.</p>
+        </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/americano.png" alt="">
+            <h3>Americano</h3>
+            <p>Intense espresso flavor diluted with hot water.</p>
+        </div>
+    
+        <div class="container-menu">
+            <img src="images/hotdrinks/sicak-cikolata.png" alt="">
+            <h3>Hot Chocolate</h3>
+            <p>A delicious taste made by melting couverture chocolate...</p>
+        </div>
+    </div>
+    <h2 class="subtitle-menu">Cold Drinks</h2>
+<div class="wrap-grid-menu">
+    
+    <div class="container-menu">
+        <img src="images/colddrinks/buzluamericano.png" alt="">
+        <h3>Iced Caffè Americano</h3>
+        <p>Iced presentation of intense espresso flavor diluted with water.</p>
+    </div>
+
+    <div class="container-menu">
+        <img src="images/colddrinks/buzlumocha.png" alt="">
+        <h3>Iced Caffè Mocha</h3>
+        <p>The flavor, where espresso, mocha sauce (chocolate sauce), cold milk and pieces of ice meet, is completed with cream.</p>
+    </div>
+
+    <div class="container-menu">
+        <img src="images/colddrinks/buzlucafelatte.png" alt="">
+        <h3>Iced Caffè Latte</h3>
+        <p>Rich espresso, cold milk and ice meet with cold coffee lovers.</p>
+    </div>
+
+    <div class="container-menu">
+        <img src="images/colddrinks/affogatto.png" alt="">
+        <h3>Affogatto</h3>
+        <p>We put our creamy ice cream in a warm espresso and serve it with fresh cream.</p>
+    </div>
+
+    <div class="container-menu">
+        <img src="images/colddrinks/dondurmalifrappe.png" alt="">
+        <h3>ICE CREAM FRAPPE</h3>
+        <p>Cold coffee with a soft drink prepared with espresso, milk, cream on snow and ice.</p>
+    </div>
+
+    <div class="container-menu">
+        <img src="images/colddrinks/portakalsuyu.png" alt="">
+        <h3>Orange juice</h3>
+        <p>freshly squeezed.</p>
+    </div>
+</div>
+
+    <!--Footer-->
+    <section class="footer">
+        <div class="social">
+            <h4 id="socialmediatitle">Social Media</h4><br>
+            <a href="https://www.instagram.com/kantacoffeeshop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://open.spotify.com/playlist/2s9R059mmdc8kz6lrUqZZd?si=f2f741ade4b546db"><i class="fab fa-spotify"></i></a>
+            <a href="https://twitter.com/coffeeshopworld"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/federalankara"><i class="fab fa-facebook-f"></i></a>
+        </div>
+ 
+        <p class="copyright">
+            Copyright © 2022 | coffee-shop all rights reserved.
+        </p>
+ 
+        <div class="contactus">
+         <h4 id="contactustitle">Contact Us</h4><br>
+           <p id="address">Yukarı Bahçelievler, 65. Sk. No:4, 06490 Çankaya/Ankara</p>
+           <i class="fa-solid fa-envelope"></i> coffeeshopcompany@gmail.com<br>
+           <i class="fa-solid fa-phone"></i> +90530 238 05 00
+ 
+        </div>
+    </section>
+ 
+
+
+    
+</body>
+</html>

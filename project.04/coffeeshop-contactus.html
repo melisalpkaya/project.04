@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="job-apply.css">
+    <!--css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="navbar.js"></script>
+</head>
+<body>
+    
+    <!--Header:Title of website and logo-->
+    <div class="header">
+        <img id="cat" alt="" src="cat.png"/>
+        <h1 id="contactus-headerid" style="color: #202020; ">Coffee Shop Co.</h1>
+  </div>
+
+    <!--Navigation Bar-->
+    <nav>
+        <div><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="index.html">HOMEPAGE</a></li>
+            <li><a href="coffeeshop-menu.html">MENU <i class="fas fa-sort-down"></i></a>
+                <ul>
+                    <li><a href="coffeeshop-foods.html">Food Menu</a></li>
+                    <li><a href="coffeeshop-drinks.html">Drink Menu</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#aboutus">ABOUT US</a></li>
+            <li><a href="coffeeshop-coffeejourney.html">COFFEE</a></li>
+            <li><a href="coffeeshop-gallery.html">GALLERY</a></li>
+            <li><a href="coffeeshop-contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    
+    <!--Main Section:Contact Us-->
+    <div class="container-contact">
+        <div class="container-item">
+            <div class="image">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <h2>Address</h2>
+            <p>Yukarı Bahçelievler, 65. Sk. No:4, 06490 
+            <br>
+            Çankaya/Ankara</p>
+        </div>
+        <div class="container-item">
+            <div class="image">
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <h2>Phone</h2>
+            <p>Telefon: +90 530 238 05 00</p>
+        </div>
+        <div class="container-item">
+            <div class="image">
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <h2>Email</h2>
+            <p>coffeeshopcompany@gmail.com
+            </p>
+        </div>
+    </div>
+
+      <!--Google maps-->
+      <div class="map"> 
+            <iframe id="googlemaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.885692706684!2d32.823655915215724!3d39.921574179425825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f9563af0b77%3A0xcb670a91da30603e!2sKANTA%20Coffee%20Shop!5e0!3m2!1str!2str!4v1648819136651!5m2!1str!2str" width="600" height="450" style="border: 0px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+
+            <!--Form-->
+        <div class="form"> 
+            <h1 id="formtitle">For your suggestions and comments:</h1> <br> 
+            <form method="post" enctype="multipart/form-data">
+
+            <label id="namesurname">Name & Surname:</label>
+            <input name="name" type="text"  required=""/> <br>
+
+            <label id="email" >E-mail:</label>
+            <input name="email" type="email"  required placeholder="Enter a valid email address"/> <br>
+
+            <label id="topicid" for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic"   required=""/> <br>
+
+            <label id="suggestions">Suggestions/comments : </label>
+            <textarea  name="suggestions" rows="9" cols="80" required=""></textarea><br>
+
+            <input class="send" type="submit" value="Send">
+
+            </form>
+        
+
+        </div>
+        
+      <script src="contactus.js"></script>
+
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-left">
+            <h1 class="modal-title">Hello</h1>
+            <p class="modal-desc">Do you want to work with us?</p>
+            <div class="input-block">
+              <label for="adsoyad" class="input-label">Name Surname</label>
+              <input type="text" name="adsoyad" id="adsoyad" placeholder="Name-surname">
+            </div>
+            <div class="input-block">
+              <label for="telephone" class="input-label">Telephone/E-mail</label>
+              <input type="text" name="telephone" id="telephone" placeholder="Telephone/E-mail address">
+            </div>
+            <div class="modal-buttons">
+              <button class="input-button">Apply</button>
+            </div>
+            <p class="sign-up">Follow us on Instagram! <a href="https://www.instagram.com/kantacoffeeshop/">Kanta Coffee Shop</a></p>
+          </div>
+          <div class="modal-right">
+            <img src="images/foto.jpg" alt="">
+          </div>
+          <button class="icon-button close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+      </svg>
+            </button>
+        </div>
+        <button class="modal-button">Job application</button>
+      </div>
+  <!--Footer-->
+  <section class="footer">
+       <div class="social">
+           <h4 id="socialmediatitle">Social Media</h4><br>
+           <a href="https://www.instagram.com/kantacoffeeshop/"><i class="fab fa-instagram"></i></a>
+           <a href="https://open.spotify.com/playlist/2s9R059mmdc8kz6lrUqZZd?si=f2f741ade4b546db"><i class="fab fa-spotify"></i></a>
+           <a href="https://twitter.com/coffeeshopworld"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.facebook.com/federalankara"><i class="fab fa-facebook-f"></i></a>
+       </div>
+
+       <p class="copyright">
+           Copyright © 2022 | coffee-shop all rights reserved.
+       </p>
+
+       <div class="contactus">
+        <h4 id="contactustitle">Contact Us</h4><br>
+          <p id="address">Yukarı Bahçelievler, 65. Sk. No:4, 06490 Çankaya/Ankara</p>
+          <i class="fa-solid fa-envelope"></i> coffeeshopcompany@gmail.com<br>
+          <i class="fa-solid fa-phone"></i> +90530 238 05 00
+
+       </div>
+   </section>
+
+   <script  src="job-apply.js"></script>
+</body>
+</html>
